@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Evelyne - Patisserie
+    </title>
+</head>
+<body>
+    <!-- <div class="backdrop"></div>
+    <div class="formulaire-commande">
+        <img src="/images/close.svg" alt="" class="closeForm">
+        <form action="">
+            <label for="formulaire-commande" class="info-commande">Informations sur votre commande</label>
+            <div class="select-cake">
+                <label for="">Choisissez votre Gâteau / Patisserie</label>
+                <select name="gateau" id="">
+                    <option value="gateau-basque">Gâteau Basque</option>
+                    <option value="gateau-basque">Pêché Mignon</option>
+                    <option value="gateau-basque">Charlottes aux fraises</option>
+                    <option value="gateau-basque">Bûche Citron-Noix de coco</option>
+                </select>
+            </div>
+            <div class="cake-number">
+                <label for="">Quantité</label>
+                <select name="quantité" id="">¨
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                </select>
+            </div>
+            <div class="part-number">
+                <label for="">Nombre de parts</label>
+                <select name="nombre de parts" id="">
+                    <option value="1">6 parts</option>
+                    <option value="2">8 parts</option>
+                    <option value="3">12 parts</option>
+                </select>
+            </div>
+            <div class="date">
+                <label for="">Date de retrait souhaitée</label>
+                <input type="date">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" class="textarea">Votre message:</textarea><br/>
+                <input type="tel" name="telephone" id="phone" placeholder="Renseignez votre téléphone" class="phone-input"><br/>
+            <button class="bouton">Envoyer</button>
+        </form>
+    </div> -->
+    <div class="header">
+        <div class="cover-commande">
+            <img src="/images/hand.svg" alt="" class= "image-pointer">
+            <div class="phoneBox">
+                <img src="/images/phone.svg" alt="" class= "image-phone">
+                <p class="phoneNumber">: 06.65.56.90.68</p>
+            </div>
+            <!-- <a href="" class="passezCommande">Soumettez-moi votre commande !</a> -->
+        </div>       
+    </div>
+    <div class="mainContent">
+        <div class="leftSide">
+            <div class="logo">
+                <img src="images/logo eve1.svg" alt="" class="logo">
+            </div>
+            <div class="description">
+                <h1 class="title">Gâteau et Patisserie <br/><span>réalisés sur commande.</span></h1>
+                <p class="explain"></p>
+            </div>
+            <div class="intro">
+                <h3 class="annonce">À déguster en famille...</h3>
+            </div>
+            <div class="adresse-evelyne">
+                <img src="/images/monein.jpg" alt="" class="img-monein">
+                <img src="/images/map.svg" alt="" class="map">
+                <p class="adresse">64360 - MONEIN</p>
+            </div>
+        
+            <div class="fcb-cover">
+                <img src="/images/fb.svg" alt="" class="reseau">
+            </div>
+        </div>
+        <div class="rightSide">
+            <div class="sliderShow middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2" >
+                    <input type="radio" name="r" id="r3" >
+                    <input type="radio" name="r" id="r4" >
+
+                    <div class="slide s1">
+                        <div class="glass-cover">
+                            <p class="cake-name">Gâteau Basque</p>
+                            <p class="taste">Parfums : <span class="taste-span">Vanille / Cerise</span></p>
+                            <div class="share-price">
+                                <div class="share-price1">8 parts - 12 €</div>
+                                <div class="share-price2">12 parts - 20 €</div>
+                            </div>
+                        </div>
+                        <img src="/images/basque.svg" alt="">
+                    </div>
+                    <div class="slide s2">
+                        <img src="/images/fruits.svg" alt="">
+                    </div>
+                    <div class="slide s3">
+                        <img src="/images/buche1.svg" alt="">
+                    </div>
+                    <div class="slide s4">
+                        <img src="/images/mignon.svg" alt="">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background">
+        <div class="offre">
+            <p class="special-offer">SPECIALEMENT POUR AUJOURD'HUI : </p>
+            <p class="special-item">Tarte aux Pêches "Roussanne" - 2.50 € la part !</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> 
+        <script src="main.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".img-monein"), {
+            max: 15,
+            speed: 300
+        });
+        VanillaTilt.init(document.querySelector(".glass-cover"), {
+            max: 15,
+            speed: 300
+        });
+    </script>
+</body>
+</html>
